@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   midnight-proof-server:
-    image: midnightnetwork/proof-server:latest
+    image: ghcr.io/midnight-ntwrk/proof-server:latest
     container_name: midnight-shield-proof-server
     ports:
       - "6300:6300"
@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
 
   midnight-sandbox:
-    image: midnightnetwork/sandbox:latest
+    image: ghcr.io/midnight-ntwrk/local-node:latest
     container_name: midnight-shield-sandbox
     ports:
       - "9944:9944"
